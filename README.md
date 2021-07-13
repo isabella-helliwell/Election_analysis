@@ -37,7 +37,7 @@
             
       file_to_load = os.path.join( "Resources", "election_results.csv") # Add a variable to load a file from a path.
            
-       file_to_save = os.path.join("analysis", "election_analysis.txt")  # Add a variable to save the file to a path.
+      file_to_save = os.path.join("analysis", "election_analysis.txt")  # Add a variable to save the file to a path.
            
       total_votes = 0                                                   # Initialize a total vote counter.
            
@@ -58,7 +58,7 @@
 ### 3.2 Analysis-part2
 
       The main partof the coding is to open the file we want to read the data from and analyse it by using
-      iteration and calculations
+      iteration and calculations.
       
     with open(file_to_load) as election_data:                           # Read the csv and convert it into a list of dictionaries
     file_reader=csv.reader(election_data)
@@ -77,3 +77,20 @@
             candidate_options.append(candidate_name)
             candidate_votes[candidate_name]=0
         candidate_votes[candidate_name] +=1  
+        
+### 3.3 Analysis-Part3
+
+      The next part is to open a text file and write some analysis to it. however, in order to be able to write our analysis to this text file,
+      we have to carry out some more iterations and loops inside this with statement.
+      
+      with open (file_to_save, "w") as txt_file:                  # we are opening the file_to_save wich is the "election_analysis.txt" file, and want to write to it "w"
+          election_results = (f"Election Results"
+               f"\n-----------------------------------\n"         # We are telling it to print out certain charactars and the value of the total votes that was calculated
+               f"Total Votes: {total_votes:,}\n"                  # in part 1
+               f"-----------------------------------\n"
+               f"\nCounty Votes:\n")
+           print(election_results)                                # The print function will print out in the VSC terminal what will be saved in the text file
+           txt_file.write(election_results)    
+      
+
+        
