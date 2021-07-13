@@ -60,5 +60,9 @@
       The main partof the coding is to open the file we want to read the data from and analyse it by using
       iteration and calculations
       
+    with open(file_to_load) as election_data:                           # Read the csv and convert it into a list of dictionaries
+    file_reader=csv.reader(election_data)
+    header = next(file_reader)                                          # It will assume that the first row is the header in the file,
+                                                                        # and will go to the next row, which will be the start position of the iteration
       
       
