@@ -114,7 +114,7 @@
  
 
     
-    At this point of the above code, we have gone through our dictionary 1 time, getting the county and its vote, before moving down
+    At this point of the above code, we have gone through our dictionary, before moving down
      to the If statement, where we check so that vote > 0, and will assign our winning vote the first county and its vote in our dictionary list
       and check so that it is >0. 
     After the If statement, we move to the second county in our dictionary list and get its value and compare it again
