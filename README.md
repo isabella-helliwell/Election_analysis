@@ -32,27 +32,27 @@
       We also need to create lista and dictionaries to hold the county and candidate names and their votes.
       Finaly, ther are some variables created for the winning_county and winning_candidate
       
-   import csv
-   import os
+      import csv
+      import os
             
-   file_to_load = os.path.join( "Resources", "election_results.csv") # Add a variable to load a file from a path.
+      file_to_load = os.path.join( "Resources", "election_results.csv") # Add a variable to load a file from a path.
            
-   file_to_save = os.path.join("analysis", "election_analysis.txt")  # Add a variable to save the file to a path.
+       file_to_save = os.path.join("analysis", "election_analysis.txt")  # Add a variable to save the file to a path.
            
-   total_votes = 0                                                   # Initialize a total vote counter.
+      total_votes = 0                                                   # Initialize a total vote counter.
            
-   candidate_options = []                                            # Candidate Options and candidate votes
-   candidate_votes = {}
+      candidate_options = []                                            # Candidate Options and candidate votes
+      candidate_votes = {}
             
-   county_list=[]                                                    Create a county list and county votes dictionary.
-   county_votes={}
+      county_list=[]                                                    Create a county list and county votes dictionary.
+      county_votes={}
   
-   winning_candidate = ""                                            # Track the winning candidate, vote count and percentage
-   winning_count = 0
-   winning_count_1 = 0
-   winning_percentage = 0
-   winning_percentage_1 = 0
-   winning_county = ""   
+      winning_candidate = ""                                            # Track the winning candidate, vote count and percentage
+      winning_count = 0
+      winning_count_1 = 0
+      winning_percentage = 0
+      winning_percentage_1 = 0
+      winning_county = ""   
       
    
 ### 3.2 Analysis-part2
