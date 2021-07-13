@@ -24,9 +24,25 @@
       
 ### 3.1 Analysis-Part 1
       
-      
-      The first part of the coding is to declare and variable, importing
-      any libraries, and creating any dictionaries and lists deem neccessary.
+      The first part of the coding is to declare any variables, importing
+      any libraries, modules, and creating any dictionaries and lists deem neccessary.
+      The code below is showing the csv and os as imported modules, file_to_load and file_to_save
+      as variables, and os.path. is a submodule that allows us to access files on different operating systems, and 
+      the join fucntion will join the file path components togetehr.
+   import csv
+   import os
+            
+   file_to_load = os.path.join( "Resources", "election_results.csv") # Add a variable to load a file from a path.
+           
+   file_to_save = os.path.join("analysis", "election_analysis.txt")  # Add a variable to save the file to a path.
+           
+   total_votes = 0                                                   # Initialize a total vote counter.
+           
+   candidate_options = []                                            # Candidate Options and candidate votes
+   candidate_votes = {}
+            
+   county_list=[]                                                    # Create a county list and county votes dictionary.
+   county_votes={}
       
       
    
