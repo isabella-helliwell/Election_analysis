@@ -28,7 +28,9 @@
       any libraries, modules, and creating any dictionaries and lists deem neccessary.
       The code below is showing the csv and os as imported modules, file_to_load and file_to_save
       as variables, and os.path. is a submodule that allows us to access files on different operating systems, and 
-      the join fucntion will join the file path components togetehr.
+      the join fucntion will join the file path components together.
+      We also need to create lista and dictionaries to hold the county and candidate names and their votes.
+      
    import csv
    import os
             
