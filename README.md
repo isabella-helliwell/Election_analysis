@@ -65,4 +65,15 @@
     header = next(file_reader)                                          # It will assume that the first row is the header in the file,
                                                                         # and will go to the next row, which will be the start position of the iteration
       
-      
+    for row in file_reader:                                             # Starting at the second row, for each row in the csv file 
+        total_votes +=1                                                 # Adding 1 to the total vote counts, which is starting at 0
+        county_name=row[1]                                              # Get the county name from each row, [1], tells the program that the county name is in column 2
+        candidate_name=row[2]                                           # Get the candidate name from each row, [2], tells the program that the candidate name is in column 3
+        if county_name not in county_list:                              # If county list is not a macth to any exsisting county name, add it to the county_list
+            county_list.append(county_name)
+            county_votes[county_name]= 0                                # Begin tracking the county's votes
+        county_votes[county_name] += 1                                  # Add a vote to that county's vote count
+        if candidate_name not in candidate_options:                     # The same is done for the candidate name and votes
+            candidate_options.append(candidate_name)
+            candidate_votes[candidate_name]=0
+        candidate_votes[candidate_name] +=1  
