@@ -89,10 +89,10 @@
                f"Total Votes: {total_votes:,}\n"                  # in part 1
                f"-----------------------------------\n"
                f"\nCounty Votes:\n")
-           print(election_results)                                # The print function will print out in the VSC terminal what will be saved in the text file
+           print(election_results)                                # The print function will print out in the VSC terminal what will be saved in the text file, see image1
            txt_file.write(election_results)    
       
-     
+     Image 1
   ![image](https://user-images.githubusercontent.com/85843030/125489238-c5238f24-6f2a-400e-b1ca-bc0a63f61777.png)
 
 
