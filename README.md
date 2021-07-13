@@ -92,7 +92,8 @@
            print(election_results)                                # The print function will print out in the VSC terminal what will be saved in the text file
            txt_file.write(election_results)    
       
-      ![image](https://user-images.githubusercontent.com/85843030/125489238-c5238f24-6f2a-400e-b1ca-bc0a63f61777.png)
+     
+            ![image](https://user-images.githubusercontent.com/85843030/125489238-c5238f24-6f2a-400e-b1ca-bc0a63f61777.png)
 
 
         
