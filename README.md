@@ -44,7 +44,7 @@
    candidate_options = []                                            # Candidate Options and candidate votes
    candidate_votes = {}
             
-   county_list=[]                                                    # Create a county list and county votes dictionary.
+   county_list=[]                                                    Create a county list and county votes dictionary.
    county_votes={}
   
    winning_candidate = ""                                            # Track the winning candidate, vote count and percentage
