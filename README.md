@@ -93,7 +93,7 @@
            txt_file.write(election_results)    
       
      
-            ![image](https://user-images.githubusercontent.com/85843030/125489238-c5238f24-6f2a-400e-b1ca-bc0a63f61777.png)
+  ![image](https://user-images.githubusercontent.com/85843030/125489238-c5238f24-6f2a-400e-b1ca-bc0a63f61777.png)
 
 
         
