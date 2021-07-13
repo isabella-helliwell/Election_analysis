@@ -30,6 +30,7 @@
       as variables, and os.path. is a submodule that allows us to access files on different operating systems, and 
       the join fucntion will join the file path components together.
       We also need to create lista and dictionaries to hold the county and candidate names and their votes.
+      Finaly, ther are some variables created for the winning_county and winning_candidate
       
    import csv
    import os
@@ -45,6 +46,13 @@
             
    county_list=[]                                                    # Create a county list and county votes dictionary.
    county_votes={}
-      
+  
+   winning_candidate = ""                                                  # Track the winning candidate, vote count and percentage
+   winning_count = 0
+   winning_count_1 = 0
+   winning_percentage = 0
+   winning_percentage_1 = 0
+   winning_county = ""   
       
    
+## 3.2 Results-part2
