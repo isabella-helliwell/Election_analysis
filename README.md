@@ -96,4 +96,17 @@
   ![image](https://user-images.githubusercontent.com/85843030/125489238-c5238f24-6f2a-400e-b1ca-bc0a63f61777.png)
 
 
+        Next is to create a for loop to get all the county names and their votes:
         
+        for county_name in county_votes:                           # Iterating through the county list using county_name as the key and getting the values (votes)
+        votes=county_votes[county_name]                            # Retrieving the total votes for each county using key(county_name), value=votes
+        vote_percentage = float(votes) / float (total_votes)* 100     # Calculating the percentage of votes for each county
+        county_results= (f"{county_name}:{vote_percentage :.1f}% ({votes:,})\n")
+        print(county_results)
+        txt_file.write(county_results)
+        
+    # At this point of the above code, we have gone through our dictionary 1 time, getting the county and its vote, before moving down
+    # to the If statement, where we check so that vote>0, and will assign our winning vote the first county and its vote in our dictionary list
+    #  and check so that it is >0. 
+    # After the If statement, we move to the second county in our dictionary list and get its value and compare it again
+    # with the if statement below to see which one is greater and assign that to the winning_count
