@@ -47,7 +47,7 @@
    county_list=[]                                                    # Create a county list and county votes dictionary.
    county_votes={}
   
-   winning_candidate = ""                                                  # Track the winning candidate, vote count and percentage
+   winning_candidate = ""                                            # Track the winning candidate, vote count and percentage
    winning_count = 0
    winning_count_1 = 0
    winning_percentage = 0
@@ -55,4 +55,10 @@
    winning_county = ""   
       
    
-## 3.2 Results-part2
+### 3.2 Analysis-part2
+
+      The main partof the coding is to open the file we want to read the data from and analyse it by using
+      iteration and calculations
+      
+      
+      
