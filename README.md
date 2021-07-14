@@ -133,7 +133,9 @@
     Since the if statement is nestled in the for loop, exsisting county read in the loop is compared to the previous one, and so on. 
     The out put at this point will look like Image 3
     
-  
+   Image 3 
+  ![image](https://user-images.githubusercontent.com/85843030/125627638-7b7c1074-a44b-4954-aab6-6d3ce7404695.png)
+
   
   
     
