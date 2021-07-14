@@ -114,10 +114,26 @@
  
 
     
-    At this point of the above code, we have gone through our dictionary, before moving down
-    to the If statement,
-    where we check so that vote > 0, and will assign our winning vote the first county and its vote in our dictionary list
-    and check so that it is >0. 
-    After the If statement, we move to the second county in our dictionary list and get its value and compare it again
-    with the if statement below to see which one is greater and assign that to the winning_count
+    Now that we know all the counties and their percentage vote and their total vote, we need to check to see
+    which county has the largest turnout.
+    This is done by an If statement:
+                  if(votes>winning_count) and (vote_percentage>winning_percentage):   #check to make sure that the votes and %votes>0
+                      winning_count=votes                                                 #assign winning_counts to thevalue of votes
+                      winning_percentage = vote_percentage                                #assign winning percentage the value of vote_percentage
+                      winning_county = county_name                                        #assign winning_county the name of the county it is reading
+              county_winner= (f"\n-----------------------------------\n"                  #after the iterations through all the counties, the county_winner will
+                              f"Largest County Turnout: {winning_county}\n"               #be assigned the value of the winning county
+                              f"-----------------------------------\n")
+              print(county_winner)                                                        #print out the county winner to the terminal with the formatting shown
+              txt_file.write(county_winner)                                               #write the county_winner and it's formatting to the text file
+    
+    
+    When the if statement is used first time, it will check so that the county votes and percentage votes are > 0. If this is the case,
+    the if statement will asign the winning_count to the value of the votes.
+    Since the if statement is nestled in the for loop, exsisting county read in the loop is compared to the previous one, and so on. 
+    The out put at this point will look like Image 3
+    
+  
+  
+  
     
