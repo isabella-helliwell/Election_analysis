@@ -24,14 +24,48 @@
       
 ### 3.1 Analysis-Part 1
       
-      The first part of the coding is to declare any variables, importing
-      any libraries, modules, and creating any dictionaries and lists deem neccessary.
-      The code below is showing the csv and os as imported modules, file_to_load and file_to_save
-      as variables, and os.path. is a submodule that allows us to access files on different operating systems, and 
-      the join fucntion will join the file path components together.
-      We also need to create lista and dictionaries to hold the county and candidate names and their votes.
-      Finaly, ther are some variables created for the winning_county and winning_candidate
+      The first part of the coding is to declare variables, importing libraries, modules, and creating dictionaries and lists.
+      The code below is showing the csv and os as imported modules, 
+      We set the counting varaibles and percentages to 0 to make sure that the iterations will work properly
+      We set some variables to empty strings, since we are using them for writing and formatting later on
+      We set the file_to_load and file_to_save as variables. 
+      We use the os.path.join which is a submodule that allows us to access files on different operating systems, and 
+      join the file path components together.
+      We also need to create lists and dictionaries to hold the county and candidate names and their votes.
+      The general structure of the code is
       
+      #     Adding the dependencies
+  
+      #     Adding variables
+  
+      #     Creating dictionaries and lists
+      
+     # With open statement to read in the csv file
+      
+            #for loop
+            
+                  #if statement
+                  
+                  #if statement
+                  
+      
+      
+      #With open statement to write the results to the text file  
+      
+            #for loop
+            
+                  #if statement
+                  
+                  
+            #for loop
+            
+                  #if statement
+    
+    
+    # End of code 
+    
+    The first part of the code with explainations is shown here:
+    
       import csv
       import os
             
@@ -57,8 +91,7 @@
    
 ### 3.2 Analysis-part2
 
-      The main partof the coding is to open the file we want to read the data from and analyse it by using
-      iteration and calculations.
+      The main partof the coding is to open the file we want to read the data from and analyse it by using iteration and calculations.
       
     with open(file_to_load) as election_data:                           # Read the csv and convert it into a list of dictionaries
     file_reader=csv.reader(election_data)
