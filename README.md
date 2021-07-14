@@ -202,5 +202,9 @@
    Image 4
    ![image](https://user-images.githubusercontent.com/85843030/125629187-5264af88-251d-4da6-a9d2-d51e5c164f54.png)
 
-      
+    
+# Results
+
+The candidate and county election results are shown here:
+
     
