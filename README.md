@@ -137,5 +137,37 @@
   ![image](https://user-images.githubusercontent.com/85843030/125627638-7b7c1074-a44b-4954-aab6-6d3ce7404695.png)
 
   
-  
+      Next we need to create one more for loop and an if statement to check how many votes and percentage votes each of the candidates have,
+      and comparing the votes and declaring the winner candidate.
+      The is done the same way as previous for and if statement that was written for the county votes.
+      
+              for candidate_name in candidate_votes:   #this for loop does the same as the previous, but iterates through the candidate names
+                  votes = candidate_votes[candidate_name]
+                  vote_percentage = float(votes) / float(total_votes) * 100
+                  candidate_results = (
+                        f"{candidate_name}: {vote_percentage :.1f}% ({votes:,})\n")
+                  print(candidate_results) 
+                  txt_file.write(candidate_results)   
+                  if(votes>winning_count_1) and (vote_percentage>winning_percentage_1): # we assigned a new winning_count_1 and set that to = 0, since the winning_count
+                        winning_count_1=votes                                           # is used in previous if statement (and is not 0 for the first run)
+                        winning_percentage_1 = vote_percentage
+                         winning_candidate = candidate_name
+    winning_candidate_summary = (
+        f"----------------------------------\n"
+        f"Winner:{winning_candidate}\n"
+        f"Winning Vote Count: {winning_count_1:,}\n"
+        f"winning Percentage: {winning_percentage_1:.1f}%\n"
+        f"-----------------------------------\n")
+    print(winning_candidate_summary)
+    txt_file.write(winning_candidate_summary)
+      
+      The above code does the same as for the county votes, except it will read in the candidates and their votes and vote percentage
+      and compare's it to the next one and prints out the winner candidate and writes the result to the text file.
+      The output results is shown in Image 4.
+   
+   
+   Image 4
+   ![image](https://user-images.githubusercontent.com/85843030/125629187-5264af88-251d-4da6-a9d2-d51e5c164f54.png)
+
+      
     
